@@ -1,0 +1,142 @@
+body {
+    position: relative;
+    overflow-x: hidden;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.4;
+    max-width: 1920px;
+    min-width: 320px;
+    width: 100%;
+    margin: auto;
+    background: #fff;
+    font-family: 'Arial', sans-serif;
+    color: #3C3E42;
+    padding: 0;
+    margin: 0;
+}
+
+/* Общий блок */
+
+.game {
+    width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+
+
+.game-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Блок с игровым полем и информацией*/
+
+.game-play {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Блок с игровым полем */
+
+.game-area {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 350px;
+}
+
+
+
+.block-red {
+    background: #FF5643;
+    opacity: 0.6;
+    width: 49%;
+    border-radius: 180px 0 0 0;
+    box-sizing: border-box;
+
+}
+
+.block-blue {
+    background: dodgerblue;
+    opacity: 0.6;
+    width: 49%;
+    border-radius: 0 180px 0 0;
+    box-sizing: border-box;
+}
+
+.block-yellow {
+    background: #FEEF33;
+    opacity: 0.6;
+    width: 49%;
+    border-radius: 0 0 0 180px;
+    box-sizing: border-box;
+}
+
+.block-green {
+    background: #BEDE15;
+    opacity: 0.6;
+    width: 49%;
+    border-radius: 0 0 180px 0;
+    box-sizing: border-box;
+}
+
+.block-red:hover,
+.block-blue:hover,
+.block-yellow:hover,
+.block-green:hover {
+    opacity: 1;
+}
+
+.block-red:hover {
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+}
+
+.block-blue:hover {
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+}
+
+.block-green:hover {
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+}
+
+.block-yellow:hover {
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+}
+
+
+/* Блок с опциями игры*/
+
+.game-option {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.game-info button {
+    width: 5em;
+    box-sizing: border-box;
+    font-size: 1.4em;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+    background: #6DABE8;
+    border: none;
+    padding: 0.3em 0.6em;
+}
+
+.game-info button:hover {
+    background: #78BCFF;
+}
+
+ .game-level {
+    display: flex;
+    flex-direction: column;
+} 
